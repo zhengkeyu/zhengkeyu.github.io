@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>flex.html | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;lt;!DOCTYPE html&amp;gt;                 Document            .f1 :nth-child(1) {            height: 100px;            width: 100px;            background-color: red;        }        .f1 :nth-child(2) {">
+  <meta name="description" content="&amp;lt;!DOCTYPE html&amp;gt;         .f1 :nth-child(1) {            height: 100px;            width: 100px;            background-color: red;        }        .f1 :nth-child(2) {            height: 100px;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="flex.html">
 <meta property="og:url" content="http://yoursite.com/2018/12/18/flex-html/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="&amp;lt;!DOCTYPE html&amp;gt;                 Document            .f1 :nth-child(1) {            height: 100px;            width: 100px;            background-color: red;        }        .f1 :nth-child(2) {">
+<meta property="og:description" content="&amp;lt;!DOCTYPE html&amp;gt;         .f1 :nth-child(1) {            height: 100px;            width: 100px;            background-color: red;        }        .f1 :nth-child(2) {            height: 100px;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-18T11:19:39.304Z">
+<meta property="og:updated_time" content="2018-12-18T11:40:09.650Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="flex.html">
-<meta name="twitter:description" content="&amp;lt;!DOCTYPE html&amp;gt;                 Document            .f1 :nth-child(1) {            height: 100px;            width: 100px;            background-color: red;        }        .f1 :nth-child(2) {">
+<meta name="twitter:description" content="&amp;lt;!DOCTYPE html&amp;gt;         .f1 :nth-child(1) {            height: 100px;            width: 100px;            background-color: red;        }        .f1 :nth-child(2) {            height: 100px;">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,7 +154,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-flex-html" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-flex-html" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -174,8 +174,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&lt;!DOCTYPE html&gt;</p>
-<html lang="en"><br><br><head><meta name="generator" content="Hexo 3.8.0"><br>    <meta charset="UTF-8"><br>    <meta name="viewport" content="width=device-width, initial-scale=1.0"><br>    <meta http-equiv="X-UA-Compatible" content="ie=edge"><br>    <title>Document</title><br>    <style><br>        .f1 :nth-child(1) {<br>            height: 100px;<br>            width: 100px;<br>            background-color: red;<br>        }<br><br>        .f1 :nth-child(2) {<br>            height: 100px;<br>            width: 100px;<br>            background-color: blue;<br>        }<br><br>        .f1 :nth-child(3) {<br>            height: 100px;<br>            width: 100px;<br>            background-color: black;<br>        }<br>         /<em> flex布局后其子级元素都会变成行内块（inline-block） </em>/<br>        .f1 {<br>            /<em> 设定为flex布局 </em>/<br>            /<em> display: flex; </em>/<br><br>            /<em> 设定主轴：垂直方向 </em>/<br>            /<em> flex-direction: column; </em>/<br><br>            /<em> 设定主轴：水平方向（默认） </em>/<br>            /<em> flex-direction: row; </em>/<br><br>            /<em> 空间不够自动换行，不挤压。<br>            flex-wrap: wrap; </em>/<br><br>            /<em> 空间不够，挤压（减少width），不换行<br>            flex-wrap；nowrop; </em>/<br><br>            /<em> 居中没空隙 </em>/<br>            /<em> justify-content: center; </em>/<br><br>            /<em> 倒着排 </em>/<br>            /<em> justify-content: flex-end; </em>/<br><br>            /<em> 默认排序 </em>/<br>            /<em> justify-content: flex-start; </em>/<br><br>            /<em> 左右顶死，中间平分 </em>/<br>            /<em> justify-content: space-between; </em>/<br><br>            /<em> 所有行内块左右空隙一样 </em>/<br>            /<em> justify-content: space-around; </em>/<br><br><br>            /<em> 居中没空隙 </em>/<br>            /<em> align-items: center; </em>/<br><br>            /<em> 默认排序 </em>/<br>            /<em> align-items:flex-start; </em>/<br><br>             /<em> 倒着排 </em>/<br>            /<em> align-itms:flex-end; </em>/<br>        }<br>    </style><br></head><br><br><body><br>    <div class="f1"><br>        <div></div><br>        <div></div><br>        <div></div><br><br>    </div><br></body><br><br></html>
+        <hr>
+<p>&lt;!DOCTYPE html&gt;</p>
+<html lang="en"><br><br><!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> --><br>        .f1 :nth-child(1) {<br>            height: 100px;<br>            width: 100px;<br>            background-color: red;<br>        }<br><br>        .f1 :nth-child(2) {<br>            height: 100px;<br>            width: 100px;<br>            background-color: blue;<br>        }<br><br>        .f1 :nth-child(3) {<br>            height: 100px;<br>            width: 100px;<br>            background-color: black;<br>        }<br>         /<em> flex布局后其子级元素都会变成行内块（inline-block） </em>/<br>        .f1 {<br>            /<em> 设定为flex布局 </em>/<br>            /<em> display: flex; </em>/<br><br>            /<em> 设定主轴：垂直方向 </em>/<br>            /<em> flex-direction: column; </em>/<br><br>            /<em> 设定主轴：水平方向（默认） </em>/<br>            /<em> flex-direction: row; </em>/<br><br>            /<em> 空间不够自动换行，不挤压。<br>            flex-wrap: wrap; </em>/<br><br>            /<em> 空间不够，挤压（减少width），不换行<br>            flex-wrap；nowrop; </em>/<br><br>            /<em> 居中没空隙 </em>/<br>            /<em> justify-content: center; </em>/<br><br>            /<em> 倒着排 </em>/<br>            /<em> justify-content: flex-end; </em>/<br><br>            /<em> 默认排序 </em>/<br>            /<em> justify-content: flex-start; </em>/<br><br>            /<em> 左右顶死，中间平分 </em>/<br>            /<em> justify-content: space-between; </em>/<br><br>            /<em> 所有行内块左右空隙一样 </em>/<br>            /<em> justify-content: space-around; </em>/<br><br><br>            /<em> 居中没空隙 </em>/<br>            /<em> align-items: center; </em>/<br><br>            /<em> 默认排序 </em>/<br>            /<em> align-items:flex-start; </em>/<br><br>             /<em> 倒着排 </em>/<br>            /<em> align-itms:flex-end; </em>/<br>        }<br>    <!-- </style>
+</head>
+
+<body>
+    <div class="f1">
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </div>
+</body> --><br><br></html>
+
+<hr>
 
       
 
